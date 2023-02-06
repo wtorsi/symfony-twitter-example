@@ -1,0 +1,15 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    # default section
+    User\:
+        resource: '../../src/User'
+        exclude: '../../src/User/{Exception}'
+
+    # api
+    Api\User\:
+        resource: '../../src/Api/User'
+        exclude: '../../src/Api/User/{Exception}'
