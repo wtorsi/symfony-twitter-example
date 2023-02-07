@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Api\User;
+namespace Api\User\Action;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[AsController]
-class UserController
+#[Route('/me', methods: 'GET')]
+class MeAction
 {
-    #[Route('/me', methods: 'GET')]
-    public function me(): Response
+    public function __invoke(): Response
     {
         return new Response();
     }

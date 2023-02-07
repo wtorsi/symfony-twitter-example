@@ -1,7 +1,7 @@
 api_user:
     resource:
-        path: "../../src/Api/User/Controller"
-        namespace: Api\User\Controller
+        path: "../../src/Api/User/Action"
+        namespace: Api\User\Action
     type: attribute
     prefix: /api
     defaults: { _locale: en }
