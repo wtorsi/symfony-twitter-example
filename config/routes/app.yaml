@@ -1,0 +1,5 @@
+app:
+    resource:
+        path: "../../src/App/Action"
+        namespace: App\Action
+    type: attribute
